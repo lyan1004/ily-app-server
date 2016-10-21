@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+
+<html xmlns:th="http://www.freemarker.org">
+<head>
+<title>Getting Started: Serving Web Content</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" href="/style/weui.min.css" />
+<link rel="stylesheet" href="/style/weui.css" />
+</head>
+<body>
+	<div class="weui-cells__title">用户基本信息</div>
+	<div class="weui-cells weui-cells_form">
+		<div class="weui-cell">
+			<div class="weui-cell__hd">
+				<label class="weui-label">姓名</label>
+			</div>
+			<div class="weui-cell__bd weui-cell_primary">
+				<input class="weui-input" type="text" th:value="${user.getName()}"
+					placeholder="请输入姓名"/>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
